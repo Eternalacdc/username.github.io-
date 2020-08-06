@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+  <title>Frozen</title>
+  <style>
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  h1{
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+    border-bottom:2px solid blue;
+    padding: 20px;
+
+  }
+
+  </style>
+</head>
+
+<body>
+<h1> Frozen </h1>
+
+
+
+
+<h2><a href="anna.html" > <font color="pink"> Anna </font> </a> </h2>
+<h2><a href="elsa.html" > <font color="#CCEEFF">Elsa </font> </a> </h2>
+
+
+
+<font color="green">arendelle time</font> : <h5 id="clock" style="display:inline" style="color:gray;">00:00</h5>
+
+
+<script>
+
+
+var clockTarget = document.getElementById("clock");
+
+
+function clock() {
+    var date = new Date();
+
+    // date Object를 받아오고
+    var month = date.getMonth();
+
+    // 달을 받아옵니다
+    var clockDate = date.getDate();
+
+    // 몇일인지 받아옵니다
+    var day = date.getDay();
+
+    // 요일을 받아옵니다.
+    var week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+
+    // 요일은 숫자형태로 리턴되기때문에 미리 배열을 만듭니다.
+    var hours = date.getHours();
+
+    // 시간을 받아오고
+    var minutes = date.getMinutes();
+
+    // 분도 받아옵니다.
+    var seconds = date.getSeconds();
+
+    // 초까지 받아온후
+    clockTarget .innerText = `${month+1}/${clockDate} ${week[day]} ` +
+
+    `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes }`  : minutes }:${seconds < 10 ? `0${seconds }`  : seconds }`;
+
+    // 월은 0부터 1월이기때문에 +1일을 해주고
+
+    // 시간 분 초는 한자리수이면 시계가 어색해보일까봐 10보다 작으면 앞에0을 붙혀주는 작업을 3항연산으로 했습니다.
+}
+
+
+
+function init() {
+
+clock();
+
+// 최초에 함수를 한번 실행시켜주고
+setInterval(clock, 1000);
+
+// setInterval이라는 함수로 매초마다 실행을 해줍니다.
+
+// setInterval은 첫번째 파라메터는 함수이고 두번째는 시간인데 밀리초단위로 받습니다. 1000 = 1초
+
+}
+
+
+
+init();
+
+
+</script>
+
+
+
+
+<p>Frozen is a 2013 American 3D computer-animated musical fantasy film produced by Walt Disney Animation Studios and released by Walt Disney Pictures.
+[5] The 53rd Disney animated feature film, it is inspired by Hans Christian Andersen's 1844 fairy tale "The Snow Queen".[6] It tells the story of
+a fearless princess who sets off on a journey alongside a rugged iceman, his loyal reindeer, and a naive snowman to find her estranged sister,
+ whose icy powers have inadvertently trapped their kingdom in eternal winter.</p>
+
+<p>Frozen underwent several story treatments before being commissioned in 2011, with a screenplay written by Jennifer Lee,
+ who also co-directed with Chris Buck. The film features the voices of Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad,
+ and Santino Fontana. Christophe Beck was hired to compose the film's orchestral score, while Robert Lopez and Kristen Anderson-Lopez wrote the songs.</p>
+
+<p>Frozen premiered at the El Capitan Theatre in Hollywood, California, on November 19, 2013,[7] had a limited release on November 22
+and went into general theatrical release on November 27. It was met with praise for its visuals, screenplay, themes, music, and voice acting;
+some film critics consider Frozen to be the best Disney animated feature film since the studio's renaissance era.[8][9] The film also achieved
+significant commercial success, earning $1.280 billion in worldwide box office revenue, including $400 million in the United States
+and Canada and $247 million in Japan. It went on to surpass Toy Story 3 (which was also distributed by Disney) as the highest-grossing animated
+film at the time as well as the highest grossing musical film before being surpassed by the remake of The Lion King in 2019; it also
+ ranks as the 16th highest-grossing film of all time, the highest-grossing film of 2013, and the third highest-grossing film in Japan.
+  It was also the highest-earning film with a female director in terms of US earnings, until surpassed by Warner Bros. Pictures' Wonder Woman.
+  [10] With over 18 million home media sales in 2014, it entered the list of best-selling films in the United States. By January 2015,
+   Frozen had become the all-time best-selling Blu-ray Disc in the United States.[11]</p>
+
+<p>Frozen won two Academy Awards for Best Animated Feature and Best Original Song ("Let It Go"),[12] the Golden Globe Award for Best Animated
+ Feature Film,[13] the BAFTA Award for Best Animated Film,[14] five Annie Awards (including Best Animated Feature),[15] two Grammy Awards
+ for Best Compilation Soundtrack for Visual Media and Best Song Written for Visual Media ("Let It Go"),[16] and two Critics' Choice Movie
+ Awards for Best Animated Feature and Best Original Song ("Let It Go").[17] An animated short sequel, Frozen Fever, premiered on March 13,
+  2015,[18] an animated featurette titled Olaf's Frozen Adventure, premiered on November 22, 2017, and a feature-length sequel, Frozen II,
+   was released on November 22, 2019.</p>
+
+<p>
+  <iframe width="1045" height="438" src="https://www.youtube.com/embed/Zi4LMpSDccc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+<img src = "1574705665.jpg">
+<p>
+  <div id="disqus_thread"></div>
+  <script>
+
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://frozen-2.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</p>
+
+
+</body>
+</html>
